@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:c="sap.cc.control" xmlns:commons="sap.suite.ui.commons"
+		controllerName="sap.cc.view.main" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<Page title="Welcome" showHeader='false'>
+			<content>
+				<c:masonryLayout
+					content="{/ProductCollection}"
+				>
+				<c:content>
+					<VBox>
+						<Label text='{ProductId} {Name}' type='Bold'/>
+						<Image src="{ProductPicUrl}" width='100%' />
+					</VBox>
+					</c:content>
+			</c:masonryLayout>
+			
+			
+			</content>
+		</Page>
+	</App>
+	
+</core:View>
